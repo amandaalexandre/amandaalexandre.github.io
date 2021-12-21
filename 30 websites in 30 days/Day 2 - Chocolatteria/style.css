@@ -1,0 +1,295 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    background-image: url('1topo.jpg');
+    min-height: 100%;
+
+    /** Tornando o fundo responsivo **/ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.linkmenu {
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.logomenu {
+    font-family: 'Old Standard TT', serif;
+    font-size: 35px;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.logoprincipal {
+    font-family: 'Readex Pro', sans-serif;
+    color: white;
+    /** Coloca a logo no centro **/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 90%;
+}
+
+.logo {
+    font-family: 'Old Standard TT', serif;
+    font-size: 85px;
+    color: white;
+    display: inline-block;
+    opacity: 0.6;
+}
+
+.logoprincipal > hr {
+    width: 40%;
+    color: white;
+}
+
+.header > h2 {
+    color: white;
+}
+
+/** Usando o CSS Grid para montar o layout restante do site **/
+/** Eu devia ter usado pra montar o site todo!! **/
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+    border: 2px;
+    max-width: 100%;
+}
+
+.image {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.description {
+    background-color: #f5eedf;
+    color: #21130d;
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+    font-family: 'IM Fell Double Pica', serif;
+    font-style: italic;
+    text-align: justify;
+}
+
+/** Tive que declarar OUTRA classe pro subtítulo **/
+.subtitulo {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid #a37b5d;
+    color: #a37b5d;
+    font-family: 'Reader Pro', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    padding: 15px 37px;
+    width: 3rem;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.button:hover {
+    background-color: #a37b5d;
+    color:white;
+    border: 2px solid white;
+}
+
+.oneday {
+    /** Fazendo com que essa célula ocupe toda a linha **/
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    /** Usando display grid pra colocar a imagem em cima do fundo branco e sobre os cartões.
+    Farei isso criando um grid com 2 linhas, assim poderei distribuir as classes usando o grid-row
+    **/
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.onedaycima {
+    background: url("onedayfundo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+.onedaybaixo {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    grid-row: 2 / 3;
+
+}
+
+#onedaysubtitulo {
+    font-family: 'Readex Pro', sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+.card-row {
+    /** Colocando os cards pra flutuar **/
+    position: relative;
+    left: 5%;
+
+    /** Colocando a margem negativa pra fazer os cartões subirem e se sobreporem ao fundo em cima**/
+    top: -50%;
+
+    /** Usando o z-index pra colocar os cartões na frente de todos os outros elementos**/
+    z-index: 20;
+
+    /** Criando uma linha flex pros cartões **/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.card {
+    background-color: #ece7cc;
+    font-family: 'IM Fell Double Pica', serif;
+    color: black;
+    width: 250px;
+    height: 300px;
+    padding: 1rem;
+
+    /** Empilhando os elementos no card verticalmente **/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardtitulo {
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 30px;
+}
+
+.joinus {
+    background-color: white;
+    background-image: url("footer-fundo.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+    padding: 1rem;
+
+    /** Indicando que essa parte ocupa toda a linha **/
+    grid-column: 1 / 3;
+}
+
+.joinus > p {
+    width: 40%;
+    font-family: 'IM Fell Double Pica', serif;
+    font-style: italic;
+    text-align: justify;
+}
+
+.footer {
+    max-width: 100%;
+    height: 10%;
+    background-color: #21130d;
+    color: white;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    line-height: 25px;
+}
+
+/** Mudando as cores dos links das redes sociais **/
+a .fab {
+    color: white;
+}
+
+/** Responsividade: telefone. Iniciando o media query **/
+@media only screen and (max-width:800px) {
+    /** Modifica a altura do header para o fundo poder envolver o subtítulo **/
+    .header {
+        height: 800px;
+    }
+    /** deixa o menu vertical **/
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /** Deixa os links do menu um pouquinho separados, pq estavam mto juntos quando fica um em cima do outro **/
+    .linkmenu {
+        padding: 5px;
+    }
+
+    /** Some com a logo **/
+    .logomenu{
+        display: none;
+    }
+
+    /** Diminui o tamanho da letra da logomarca **/
+    .logo {
+        font-size: 45px;
+    }
+
+    .header > h2 {
+        display: none;
+    }
+
+    /** Empilha as imagens e descrições do content ***/
+    .content {
+    display: flex;
+    flex-direction: column;
+    }
+
+    /** Empilha os cards    **/
+    .card-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2px;
+    }
+
+    /** Deixa o tamanho dos cards mais responsivos **/
+    .card {
+        width: 90%;
+    }
+    
+    .footer {
+        flex-direction: column;
+    }
+    } 
+
