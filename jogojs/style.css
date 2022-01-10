@@ -1,0 +1,109 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/fundo-intro-paisagem.jpg');
+    /* Faz com que o fundo se estique e ocupe toda a página */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Alinha o fundo da imagem com o fundo da página */
+    background-position-y: bottom;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Usando flex para conter imagens e texto em uma coluna. */
+/* Usarei z-index para ordenar todos os elementos. */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 80vw;
+    max-height: 80vh;
+    padding: 0px;
+}
+
+.texto-atras {
+    font-family: 'Yanane Kaffeesatz', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 12rem;
+    color: white;
+    position: absolute;
+    /* left:10%; */
+    bottom:40%;
+    text-shadow: 3px 3px 10px black;
+    z-index: 1;
+}
+
+.mao {
+    position: absolute;
+    bottom: 0%;
+    /* Criando uma sombra para a imagem */
+    filter: drop-shadow(3px 5px 5px black);
+    z-index: 2;
+    width: 30%;
+    height: auto;
+}
+
+.terra {
+    position: absolute;
+    bottom: -150px;
+    z-index: 3;
+}
+
+.texto-frente {
+    font-family: 'Yanane Kaffeesatz', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 12rem;
+    color: white;
+    position: absolute;
+    bottom: 13%;
+    z-index: 4;
+    filter: drop-shadow(3px 5px 5px black);
+}
+
+.botao-jogar {
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    z-index: 5;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 38px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.botao-jogar > a{
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    color: white;
+}
+
+.botao-jogar > a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+/* Quando a tela diminui, as fontes ficam grandes. Vamos diminui-las pra deixá-las responsivas. */
+@media (max-width: 900px) {
+    .texto-atras {
+        font-size: 5rem;
+    }
+
+    .texto-frente {
+        font-size: 5rem;
+    }
+}

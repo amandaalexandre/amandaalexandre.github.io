@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bigcontainer {
+    background-image: url('fundo-fase-1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 20px;
+
+    /* Posicionando o div interior no centro da página. */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.smallcontainer {
+    width: 40%;
+    color: white;
+    background-color: rgb(1, 19, 3, 0.5);
+    padding: 2rem;
+    font-family: Garamond, serif;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title {
+    font-family: 'Caesar Dressing', Georgia, Times, serif;
+    font-size: 50px;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid white;
+    font-family: Helvetica, sans-serif;
+    width: 120px;
+    height: 35px;
+    color: white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: white;
+    color: rgb(1, 19, 3);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.rodape {
+    padding: 1rem;
+    background-color: rgb(1, 19, 3, 1);
+    color: white;
+    font-size: 12px;
+    font-style: italic;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Deixa os links do Font Awesome brancos */
+.rodape .fa-brands {
+    color: white;
+    margin: 5px;
+}
+
+/* Estilo da Fase 1 */
+.containerfase1 {
+    max-width: 80%;
+    color: white;
+    background-color: rgb(1, 19, 3, 0.9);
+    box-shadow: 0 0 10px 10px;
+    padding: 2rem;
+    font-family: Garamond, serif;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
