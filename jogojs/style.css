@@ -53,14 +53,14 @@ body {
 
 .terra {
     position: absolute;
-    bottom: -150px;
+    bottom: -140px;
     z-index: 3;
 }
 
 .texto-frente {
     font-family: 'Yanane Kaffeesatz', Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 12rem;
+    font-size: 9rem;
     color: white;
     position: absolute;
     bottom: 13%;
@@ -95,6 +95,27 @@ body {
     text-decoration: none;
     background-color: white;
     color: black;
+}
+
+.rodape {
+    z-index: 5;
+    position: absolute;
+    bottom: -20%;
+    padding: 1rem;
+    color: white;
+    font-size: 12px;
+    font-style: italic;
+    font-family: Helvetica, sans-serif;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Deixa os links do Font Awesome brancos */
+a .fab {
+    color: white;
 }
 
 /* Quando a tela diminui, as fontes ficam grandes. Vamos diminui-las pra deixá-las responsivas. */
