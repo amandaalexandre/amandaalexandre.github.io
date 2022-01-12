@@ -35,7 +35,7 @@ function avancJogo (escolha) {
     }
 }
 
-var index = 0;
+var index = 2;
 mostraTexto(index);
 clicaBotao(index);
 
