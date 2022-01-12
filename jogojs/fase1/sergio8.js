@@ -18,7 +18,7 @@ texto.innerText = roteiro[index][1];
 
 function clicaBotao() {
     botao.addEventListener('click', function() {
-        window.location.href="../fase2/index.html";
+        window.location.href="../fase2/sergiomorto/index.html";
     });
 }
 

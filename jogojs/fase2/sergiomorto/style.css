@@ -5,7 +5,7 @@
 }
 
 .bigcontainer {
-    background-image: url('fundo-fase-1.jpg');
+    background-image: url('../fundo-fase-2.jpg');
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -22,7 +22,7 @@
 .smallcontainer {
     width: 40%;
     color: white;
-    background-color: rgb(1, 19, 3, 0.5);
+    background-color: rgba(207, 139, 49, 0.5);
     padding: 2rem;
     font-family: Garamond, serif;
     min-height: 80%;
@@ -33,17 +33,18 @@
 
 .title {
     font-family: 'Caesar Dressing', Georgia, Times, serif;
+    color:rgba(248, 143, 6);
     font-size: 50px;
 }
 
 #botao {
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid black;
     font-family: Helvetica, sans-serif;
     width: 120px;
     height: 35px;
-    color: white;
-    border-radius: 5px;
+    color: black;
+    border-radius: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,15 +52,15 @@
 }
 
 #botao:hover {
-    background-color: white;
-    color: rgb(1, 19, 3);
+    background-color: black;
+    color: orange;
     font-weight: 600;
     cursor: pointer;
 }
 
 .rodape {
     padding: 1rem;
-    background-color: rgb(1, 19, 3, 1);
+    background-color: black;
     color: white;
     font-size: 12px;
     font-style: italic;
