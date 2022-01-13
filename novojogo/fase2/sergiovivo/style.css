@@ -1,0 +1,95 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bigcontainer {
+    background-image: url('../fundo-fase-2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    padding: 20px;
+
+    /* Posicionando o div interior no centro esquerdo da página. */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.smallcontainer {
+    width: 40%;
+    color: white;
+    background-color: rgba(207, 139, 49, 0.5);
+    padding: 2rem;
+    font-family: Garamond, serif;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title {
+    font-family: 'Caesar Dressing', Georgia, Times, serif;
+    color:rgba(248, 143, 6);
+    font-size: 50px;
+}
+
+#botao {
+    background-color: transparent;
+    border: 2px solid black;
+    font-family: Helvetica, sans-serif;
+    width: 120px;
+    height: 35px;
+    color: black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#botao:hover {
+    background-color: black;
+    color: orange;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.rodape {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-style: italic;
+    font-family: Helvetica, sans-serif;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Deixa os links do Font Awesome brancos */
+a .fab {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .bigcontainer {
+    /* Posicionando o div interior no centro da página. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    /* Aumenta a largura do container interior para caber o texto. */
+    .smallcontainer {
+        width: 80%;
+        height: auto;
+    }
+}
+
+

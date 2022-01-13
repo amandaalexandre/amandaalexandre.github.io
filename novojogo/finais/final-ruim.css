@@ -1,0 +1,53 @@
+body {
+    background-image: url('fundo-final-ruim.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerruim {
+    background-color: rgba(240, 234, 234, 0.719);
+    color: black;
+    font-family: Helvetica;
+    height: 70%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.botao {
+    background-color: transparent;
+    border: 2px solid white;
+    font-family: Helvetica, sans-serif;
+    width: 120px;
+    height: 35px;
+    color: white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao > a {
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: white;
+    color: rgb(1, 19, 3);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a:visited {
+    color: orange;
+    text-decoration: none;
+}
