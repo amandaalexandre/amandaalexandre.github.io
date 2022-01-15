@@ -1,7 +1,6 @@
 // Pega o div do botão e do texto como variável
 var botao = document.getElementById("botao");
 var texto = document.getElementById("texto");
-var index;
 
 const roteiro = [
     [0, "Depois de se perder dos seus amigos, Sérgio caminha muito na floresta. Ele está com frio, fome e sede. Está desesperado por abrigo. Ele encontra uma cabana abandonada no meio dela.", "Entra na cabana", 1, "Observa a cabana de fora", 2],
@@ -15,10 +14,10 @@ const roteiro = [
     [8, "Depois de se encolher em um canto da cabana, Sérgio ouve a porta sendo arrombada. \n \n As figuras estavam na sua frente."]
 ];
 
-// function mostraTexto (a) {
-//         texto.innerText = roteiro[a][1];
-//         console.log("Texto mudado para "+ roteiro[a][1]);
-// };
+function mostraTexto (a) {
+        texto.innerText = roteiro[a][1];
+        console.log("Texto mudado para "+ roteiro[a][1]);
+};
 
 function clicaBotao(b) {
     var opção1 = roteiro[b][2];
@@ -44,14 +43,17 @@ function avancJogo (escolha, c) {
     } else {
         alert("Escolha 1 ou 2.");
     }
-    // console.log("Depois de avançar o jogo: O passo atual é " + c);
-    // jogar(c);
+    console.log("Depois de avançar o jogo: O passo atual é " + c);
+    jogar(c);
 }
 
-// function jogar(index) {
-//     mostraTexto(index);
-//     clicaBotao(index);
-// }
+// Exibe o texto incial quando carrega a página:
+document.addEventListener("load", mostraTexto(0));
+
+function jogar(index) {
+    mostraTexto(index);
+    clicaBotao(index);
+}
 
 
 
