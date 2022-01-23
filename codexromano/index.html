@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificação romana</title>
     <link rel="stylesheet" href="style.css">
+    <script src="decode.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -15,23 +16,33 @@
 
         Código:
         <span>
-        <input type="checkbox" id="cesar" name="codigo" value="César">
+        <input type="checkbox" id="cesar" name="codigo" value="César" onclick="mostraInc()">
         <label for="César">César</label>
     </input>
 
     <input type="checkbox" id="base64" name="codigo" value="Base64">
     <label for="Base64">Base 64</label>
 </input>
+
 </span>
+
+<!-- Incremento do código de Cèsar -->
+<div id="incremento">
+Incremento:
+<input type="text" id="increment" name="incremento" value="Quantas 'casas' o código deve andar?"><label for="incremento">
+ </label></input>
+</div>
 
     Procedimento: 
     <span>
-    <input type="radio" id="code" name="procedimento"><label for="code">Codificar</label>
-    <input type="radio" id="decode" name="procedimento"><label for="decode">Decodificar</label>
+    <input type="radio" id="code" name="procedimento" onclick="mudaBotao()"><label for="code" >Codificar</label>
+    <input type="radio" id="decode" name="procedimento" onclick="mudaBotao()"><label for="decode">Decodificar</label>
 </span>
-    <input type="button" value="Ação!" class="button"></input>
+    <button id="botaoEnviar"></button>
     </div>
     
+    <!-- Incluindo um parágrafo de mensagem de erro -->
+    <p></p>
 
 </body>
 </html>
