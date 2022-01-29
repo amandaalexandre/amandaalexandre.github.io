@@ -11,16 +11,15 @@
 <body>
     <div class="container">
         <h1>DeCodex</h1>
-        Texto:
-        <textarea>Coloque sua mensagem aqui.</textarea>
+        <textarea id="mensagem" rows="4">Coloque sua mensagem aqui.</textarea>
 
         Código:
         <span>
-        <input type="checkbox" id="cesar" name="codigo" value="César" onclick="mostraInc()">
+        <input type="radio" id="cesar" name="codigo" value="César">
         <label for="César">César</label>
     </input>
 
-    <input type="checkbox" id="base64" name="codigo" value="Base64">
+    <input type="radio" id="base64" name="codigo" value="Base64">
     <label for="Base64">Base 64</label>
 </input>
 
@@ -29,7 +28,7 @@
 <!-- Incremento do código de Cèsar -->
 <div id="incremento">
 Incremento:
-<input type="text" id="increment" name="incremento" value="Quantas 'casas' o código deve andar?"><label for="incremento">
+<input type="text" id="increment" name="incremento" value="1"><label for="incremento">
  </label></input>
 </div>
 
@@ -38,11 +37,16 @@ Incremento:
     <input type="radio" id="code" name="procedimento" onclick="mudaBotao()"><label for="code" >Codificar</label>
     <input type="radio" id="decode" name="procedimento" onclick="mudaBotao()"><label for="decode">Decodificar</label>
 </span>
-    <button id="botaoEnviar"></button>
+    <button id="botaoEnviar">Codificar!</button>
+    <br><br>
+    <strong>Resultado:</strong><br>
+    <!-- Incluindo um parágrafo para exibir o resultado -->
+    <p></p>
+
+
     </div>
     
-    <!-- Incluindo um parágrafo de mensagem de erro -->
-    <p></p>
+    
 
 </body>
 </html>
