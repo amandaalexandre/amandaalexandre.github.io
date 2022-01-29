@@ -40,6 +40,7 @@ botao.addEventListener('click', function(event) {
 function codeCesar(msg) {
     msg = msg.split("");
     console.log(msg);
+    
     let indexAtual = msg.map((x) => x.charCodeAt());
     console.log(indexAtual);
     let indexNovo = indexAtual.map((x) => x+inc);
@@ -60,6 +61,8 @@ function decodeCesar(msg) {
 
 function checaOpcao () {
     var msg = document.getElementById('mensagem').value;
+    // Atualiza o valor de inc:
+    inc = parseInt(document.getElementById('increment').value);
     console.log(msg);
 
     if (code.checked) {
