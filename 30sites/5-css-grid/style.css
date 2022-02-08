@@ -1,0 +1,361 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+   
+.template {
+    width: 100vw;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(8);
+}
+
+.topo {
+    grid-column: 1 / 3;
+    background-image: url('img/fundo-montanha.jpg');
+    /* Coloca o fundo para ocupar 80% da tela */
+    height: 80vh;
+    /* Coloca a imagem pra aparecer como um todo no fundo div */
+    background-size: cover;
+    /* Centraliza a imagem de fundo */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.topo::before {
+    content: "";
+    background: linear-gradient(326deg, rgba(140,86,105,0.86) 15%, rgba(12,40,116,0.85) 71%);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 80vh;
+    width: 100vw;
+    z-index: 2;
+    padding-bottom: 1rem;
+  }
+
+.topo h1 {
+    font-family: 'Righteous', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+.link-botao-branco {
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    background-color: transparent;
+    border-radius: 80px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600; 
+}
+
+.link-botao-branco:hover {
+    background-color: white;
+    color: pink;
+}
+
+.link-botao-video {
+    display: inline-block;
+    color: white;
+    border: 2px solid black;
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    background-color: black;
+    border-radius: 80px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link-botao-video:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 40px;
+    width: 90vw;
+    z-index: 3;
+    padding-top: 1rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+    font-weight: 600;
+}
+
+#logo {
+    font-family: 'Righteous', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    z-index: 3;
+}
+
+.fas {
+    z-index: 3;
+}
+
+.topo .fas a, a:visited, a:hover, a:active {
+    color: white;
+    cursor: pointer;
+}
+
+.grade-branca {
+    grid-column: 1 / 3;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+.grade-icones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 80vw;
+    text-align: center;
+    gap: 2rem;
+    font-size: 12px;
+}
+
+h2 {
+    font-family: 'Righteous', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    color: #01012e;
+}
+
+h3 {
+    font-family: 'Righteous', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #01012e;
+}
+
+.foto {
+    max-height: 80vh;
+    grid-column: 1 / 3;
+}
+
+.portfolio {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.tabela-de-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70vw;
+}
+
+.tabela-de-links a {
+    color: gray;
+    font-family: 'Righteous', Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.tabela-de-links a:hover {
+    color: black;
+    font-family: 'Righteous', Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.foto-menor > img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.foto-descricao {
+    padding: 3rem;
+}
+
+.link-botao-cinza {
+    display: inline-block;
+    color: grey;
+    border: 2px solid grey;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    background-color: transparent;
+    border-radius: 80px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+.link-botao-cinza:hover {
+    background-color: grey;
+    color: white;
+}
+
+.trabalhe-conosco {
+    grid-column: 1 / 3;
+    background: linear-gradient(326deg, rgba(140,86,105,0.86) 15%, rgba(12,40,116,0.85) 71%);
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px, 1fr;
+    align-content: start;
+    color: white;
+    padding: 3rem;
+    gap: 25px;
+}
+
+.trabalhe-conosco h3 {
+    color: white;
+}
+
+.trabalhe-conosco h2 {
+    grid-column: 1 / 3;
+    color: white;
+    text-align: center;
+}
+
+.bastidores {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px, 1fr;
+    text-align: center;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.bastidores h2 {
+    grid-column: 1 / 3;
+    place-self: center;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    box-shadow: 3px 3px 10px grey;
+    border-radius: 5px;
+    align-self: start;
+    justify-self: center;
+    font-size: 12px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    height: 500px;
+    box-shadow: 3px 3px 10px grey;
+    border-radius: 5px;
+    align-self: start;
+    justify-self: center;
+    font-size: 12px;
+}
+
+.foto-horizontal {
+    border-radius: 5px 5px 0 0;
+}
+
+.foto-vertical {
+    border-radius: 5px 0 0 5px;
+}
+
+.foto-pessoa {
+    border-radius: 50%;
+}
+
+.card-descricao {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-descricao span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    grid-column: 1 / 3;
+    background-color: #6972ea;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 900px) {
+    .template {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grade-branca {
+        height: auto;
+    }
+    .grade-icones {
+        display: flex;
+        flex-direction: column;
+    }
+    .trabalhe-conosco {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bastidores {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .card1 {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 130vh;
+        width: 450px;
+    }
+
+    .foto-vertical {
+        border-radius: 5px 5px 0 0;
+        object-fit: fill;
+    }
+   
+}
