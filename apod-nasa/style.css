@@ -14,17 +14,17 @@ overflow-x: hidden;
 
 .container-video > video {
 max-width: 100%;
-height: auto;
+height: 100%;
 object-fit: cover;
 z-index: 0;
 }
 
 .content {
-z-index: 4;
+z-index: 1;
 position: absolute;
 top: 5rem;
 width: 100vw;
-height: 100vh;
+height: 70%;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -67,6 +67,7 @@ a {
 }
 
 footer {
+    /* position: relative; */
     background-color: #080301;
     padding: 2rem;
     color: white;
@@ -80,8 +81,9 @@ a .fab {
     color: white;
 }
 
-@media (max-width: 768px) {
+/* Evita que o footer e o botão de ver fotos se sobreponham */
+@media (max-width: 800px) {
     .content {
-        padding: 2rem;
+        height: auto;
     }
 }
