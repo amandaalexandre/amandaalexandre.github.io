@@ -62,6 +62,11 @@ h1 {
     border-radius: 5px;
 }
 
+.button:hover {
+    background-color: white;
+    color: #080301;
+}
+
 a {
     text-decoration: none;
 }
