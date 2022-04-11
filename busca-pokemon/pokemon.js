@@ -29,23 +29,3 @@ $(document).ready (function () {
 })
 
 
-// Com Ajax:
-// var requisicao = new XMLHttpRequest();
-// requisicao.open("GET", "https://pokeapi.co/docs/v2");
-// requisicao.send();
-
-// requisicao.onload = function() {
-//     if(requisicao.status == 200) {
-//     response = requisicao.response;
-//     responseObj = JSON.parse(response);
-//     console.log(responseObj[0].name.first);
-//     }
-//     }
-
-// Criando uma classe
-// let urlPokemon = {
-//     url: 'https://pokeapi.co/api/v2/pokemon/',
-//     name: 'pikachu'
-//     }
-// }
-
