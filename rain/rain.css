@@ -1,4 +1,40 @@
 body {
-    background-color: black;
+     margin: 0;
     color: white;
+}
+
+container-rain {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+canvas { 
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #202020, #111119);
+    display: block; 
+    overflow: hidden;
+}
+
+.chuva {
+    height: 20px;
+    width: 2px;
+    background-color: white;
+    border-color: transparent;
+    animation-name: rain;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rain {
+    from {
+        transform: rotate(105deg) translateX(0);
+    }
+
+    to {
+        transform: rotate(105deg) translateX(calc(100vh + 20px));
+    }
 }
