@@ -1,0 +1,22 @@
+button {
+    border: 0;
+    font-family: 'Prompt';
+    box-shadow: 5px 5px var(--brown);
+    margin: 1rem 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.link-button {
+    background-color: var(--black);
+    color: var(--white);
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.link-button-white {
+    background-color: var(--white);
+    color: var(--black);
+}
