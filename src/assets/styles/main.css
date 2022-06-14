@@ -10,14 +10,12 @@ main > .arrow-down {
     font-size: 2rem;
 }
 
-@media (min-width: 768px) {
-    main-container > p {
-        width: 30%;
-    }
+.text-block {
+    max-width: 50vw;
 }
 
 @media (max-width: 768px) {
-    main-container > p {
-        width: 90%;
+    .text-block {
+        width: 90vw;
     }
 }

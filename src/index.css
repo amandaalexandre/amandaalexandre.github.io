@@ -20,6 +20,10 @@ h1 {
   font-size: 10vw;
 }
 
+h2 {
+  font-size: 3.5vw;
+}
+
 h3, h4 {
   font-family: 'Prompt', 'Sogoe UI', sans-serif;
 }

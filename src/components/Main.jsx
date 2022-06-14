@@ -15,7 +15,7 @@ export default function Main() {
             <div className='main-container'>
                 <h1>AMANDA <span className='text-white'>ALEXANDRE</span></h1>
                 <h2>FULL STACK DEVELOPER</h2>
-                <p>Junior Full Stack Developer in love with interactive interfaces. Projects include creating and consuming APIs, Javascript, React, database queries and Node.js.  
+                <p className='text-block'>Junior Full Stack Developer in love with interactive interfaces. Projects include creating and consuming APIs, Javascript, React, database queries and Node.js.  
                 </p>
 
                 {/* Include links to CV and Skills component */}
