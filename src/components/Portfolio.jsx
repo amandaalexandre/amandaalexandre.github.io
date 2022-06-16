@@ -1,6 +1,10 @@
 import React from 'react'
 import '../assets/styles/portfolio.css'
 
+// importing icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons'
+
 export default function Portfolio() {
     
     return (
@@ -31,6 +35,16 @@ export default function Portfolio() {
                number
             </div>
 
+        <div className='say-hi'>
+            Did you love it?
+            <br/>
+            {/* Include link to contact page */}
+            Then say hi.
+        </div>
+
+        <div className='arrow-down'>
+            <FontAwesomeIcon icon={faArrowDownLong} />
+            </div>
         </section>
     )
 }
