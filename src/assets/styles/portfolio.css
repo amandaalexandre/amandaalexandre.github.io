@@ -6,10 +6,15 @@
     padding: 3.5rem;
 }
 
+/* Stretches the title, arrow and message throught the whole grid */
 .portfolio-container > h1, .say-hi, .portfolio-container > .arrow-down {
+    grid-column: 1/4;
+}
+
+/* Centering the arrow and message */
+.say-hi, .portfolio-container > .arrow-down {
     display: flex;
     justify-content: center;
-    grid-column: 1/4;
 }
 
 .portfolio-card {
@@ -26,7 +31,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .portfolio-container > h1 {
+    .portfolio-container > h1, .say-hi, .portfolio-container > .arrow-down {
         /* padding-left: 2rem; */
         grid-column: 1/3;
     }
