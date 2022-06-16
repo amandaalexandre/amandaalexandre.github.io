@@ -6,14 +6,14 @@ import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons'
 
 // importing styles
 import '../assets/styles/main.css'
-import '../assets/styles/text-white.css'
+import '../assets/styles/titles.css'
 import '../assets/styles/button.css'
 
 export default function Main() {
     return (
         <main>
             <div className='main-container'>
-                <h1>AMANDA <span className='text-white'>ALEXANDRE</span></h1>
+                <h1>AMANDA <span className='text-shadow-white'>ALEXANDRE</span></h1>
                 <h2>FULL STACK DEVELOPER</h2>
                 <p className='text-block'>Junior Full Stack Developer in love with interactive interfaces. Projects include creating and consuming APIs, Javascript, React, database queries and Node.js.  
                 </p>

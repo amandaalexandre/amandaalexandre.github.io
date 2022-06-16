@@ -1,0 +1,42 @@
+.skills-container {
+    /* width: 100vw; */
+    color: var(--white);
+    padding: 3.5rem;
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.skills-container > h1 {
+    grid-column: 1/3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Pushes the div downwards to create an assymetry */
+.soft-skills {
+    padding-top: 30vh;
+}
+
+/* centers the down arrow */
+.skills-container > .arrow-down {
+    grid-column: 1/3;
+    justify-self: center;
+    align-self: center;
+}
+
+@media (max-width: 767px) {
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* Removes artificially created padding between hard and soft skills section - it lets the gap property take care of spacing the two elements */
+    .soft-skills {
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,50 @@
+.title-white {
+    color: var(--white);
+
+}
+
+.title-dark {
+    color: var(--black);
+
+}
+
+/* inserts stroke-like shadow on titles */
+.text-shadow-white {
+    color: var(--white);
+    text-shadow:
+    -5px -1px 0 #000,  
+     1px -1px 0 #000,
+     -5px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.text-shadow-black {
+    color: var(--black);
+    text-shadow:
+    -5px -1px 0 #fff,  
+     1px -1px 0 #fff,
+     -5px 1px 0 #fff,
+      1px 1px 0 #fff;
+}
+
+/* Selects fonts for each title size */
+h1, h2 {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  }
+
+  h3, h4 {
+    font-family: 'Prompt', 'Sogoe UI', sans-serif;
+  }
+
+  /* Selects size for each title size */
+  h1 {
+    font-size: 10vw;
+  }
+  
+  h2 {
+    font-size: 3.5vw;
+  }
+  
+  h3 {
+    font-size: 3vw;   
+  }

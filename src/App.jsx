@@ -1,6 +1,8 @@
 import React from "react";
 import Header from './components/Header'
 import Main from './components/Main'
+import Skills from './components/Skills'
+import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <div>
         <Header/>
         <Main/>
+        <Skills/>
+        <Portfolio/>
       </div>
  
   )

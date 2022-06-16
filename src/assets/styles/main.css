@@ -1,11 +1,11 @@
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 3.5rem;
 }
 
-main > .arrow-down {
+.arrow-down {
     margin: 2rem 0;
     font-size: 2rem;
 }

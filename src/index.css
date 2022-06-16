@@ -2,7 +2,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 :root {
@@ -12,24 +11,8 @@
   --grey: rgb(17, 17, 25, 0.7);
 }
 
-h1, h2 {
-  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
-}
-
-h1 {
-  font-size: 10vw;
-}
-
-h2 {
-  font-size: 3.5vw;
-}
-
-h3, h4 {
-  font-family: 'Prompt', 'Sogoe UI', sans-serif;
-}
 
 body {
-  margin: 0;
   font-family: -apple-system, 'Prompt', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

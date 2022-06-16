@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/styles/header.css'
+import { Link } from 'react-router-dom'
 
 // importing images
 import Logo from '../assets/images/logo.png'
@@ -10,7 +11,9 @@ export default function Header() {
 
     return (
         <nav className='nav-maior'>
+            <Link to='/'>
              <img src={Logo} className='logo'></img>
+            </Link>
             <span className='nav-menu'>
                 <span className='links-menu'>
                     github linkedin skills projects contact
