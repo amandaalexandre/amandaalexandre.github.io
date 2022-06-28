@@ -12,7 +12,7 @@ export default function Skills() {
     
 
     return (
-        <section className='skills-container'>
+        <section className='skills-container' id="skills">
             <h1><span className='title-white'>MY</span> <span className='text-shadow-black'>SKILLS</span></h1>
             
             <div className='hard-skills'>

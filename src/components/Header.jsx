@@ -1,6 +1,7 @@
 import React from 'react'
 import '../assets/styles/header.css'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 // importing images
 import Logo from '../assets/images/logo.png'
@@ -16,7 +17,17 @@ export default function Header() {
             </Link>
             <span className='nav-menu'>
                 <span className='links-menu'>
-                    github linkedin skills projects contact
+                    <a href="https://github.com/amandaalexandre">github</a> 
+                    
+                    <a href="https://www.linkedin.com/in/amanda-vieira-016468211/">
+                    linkedin</a>
+                    
+                    <HashLink smooth to="#skills">skills</HashLink>
+                     
+                    
+                    <HashLink smooth to='#projects' >projects</HashLink> 
+                    
+                    <HashLink smooth to='#contact' >contact</HashLink>
                 </span>
                 
                 {/* Add menu link in the bars icon */}

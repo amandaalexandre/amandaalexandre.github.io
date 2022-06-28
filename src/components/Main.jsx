@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 // importing icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,8 +22,13 @@ export default function Main() {
 
                 {/* Include links to CV and Skills component */}
                 <span>
-                    <button className='link-button'>see what I can do</button>
-                    <button className='link-button'>download my CV</button>
+                    <HashLink smooth to='#skills'>
+                        <button className='link-button'>see what I can do</button>
+                    </HashLink>
+
+                    <Link to='amanda-vieira-full-stack'>
+                        <button className='link-button'>download my CV</button>
+                    </Link>
                 </span>
             </div>
 

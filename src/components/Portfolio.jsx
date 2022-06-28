@@ -18,7 +18,7 @@ export default function Portfolio() {
     })
     
     return (
-        <section className='portfolio-container'>
+        <section className='portfolio-container' id="projects">
             <h1 className='text-shadow-white'>PORTFOLIO</h1>
             {projects}       
         <div className='say-hi'>
