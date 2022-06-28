@@ -10,8 +10,43 @@
 }
 
 .nav-menu {
+
     line-height: 2.5rem;
 } 
+
+.links-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.links-menu > a {
+    position: relative;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.links-menu > a:hover {
+    color: var(--black);
+}
+
+.links-menu > a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--black);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .links-menu > a:hover::before {
+    transform: scaleX(1);
+  }
 
 /* Menu icon - It's hidden as default - It will show in the media queries for smaller screens */
 .menu-icon {

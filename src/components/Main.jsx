@@ -26,7 +26,7 @@ export default function Main() {
                         <button className='link-button'>see what I can do</button>
                     </HashLink>
 
-                    <Link to='amanda-vieira-full-stack'>
+                    <Link to='amanda-vieira-full-stack.pdf'>
                         <button className='link-button'>download my CV</button>
                     </Link>
                 </span>
