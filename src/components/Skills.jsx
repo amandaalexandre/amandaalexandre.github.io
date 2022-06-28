@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 
 // importing styles
 import '../assets/styles/titles.css'
@@ -40,9 +41,9 @@ export default function Skills() {
             </ul>
             </div>
 
-            <div className='arrow-down'>
-            <FontAwesomeIcon icon={faArrowDownLong} />
-            </div>
+            <HashLink smooth to='#projects' className='arrow-down' >
+                <FontAwesomeIcon icon={faArrowDownLong} />
+            </HashLink>
         
         </section>
     )

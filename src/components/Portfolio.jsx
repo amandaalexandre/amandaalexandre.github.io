@@ -2,6 +2,7 @@ import React from 'react'
 import '../assets/styles/portfolio.css'
 import portfolioData from "../portfolioData";
 import Project from './Project';
+import { HashLink } from 'react-router-hash-link'
 
 // importing icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -26,11 +27,16 @@ export default function Portfolio() {
             <br/>
             
             {/* Include link to contact page */}
-            say hi.
+            <HashLink smooth to='#contact' >
+                say hi.
+            </HashLink>
+           
         </div>
 
         <div className='arrow-down'>
+        <HashLink smooth to='#contact' >
             <FontAwesomeIcon icon={faArrowDownLong} />
+        </HashLink>
             </div>
         </section>
     )

@@ -33,7 +33,9 @@ export default function Main() {
             </div>
 
             {/* Insert link to skills */}
-            <FontAwesomeIcon icon={faArrowDownLong} className='arrow-down'/>
+            <HashLink smooth to='#skills' className='arrow-down' >
+                <FontAwesomeIcon icon={faArrowDownLong} />
+            </HashLink>
         </main>
     )
 }

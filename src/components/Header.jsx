@@ -24,14 +24,15 @@ export default function Header() {
                     
                     <HashLink smooth to="#skills">skills</HashLink>
                      
-                    
                     <HashLink smooth to='#projects' >projects</HashLink> 
                     
                     <HashLink smooth to='#contact' >contact</HashLink>
                 </span>
                 
                 {/* Add menu link in the bars icon */}
-                <FontAwesomeIcon icon={faBars} className='menu-icon' />
+              
+                    <FontAwesomeIcon icon={faBars} className='menu-icon' />
+                
             </span>
            
         </nav>

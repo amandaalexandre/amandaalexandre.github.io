@@ -16,6 +16,16 @@ a {
   text-decoration: none;
 }
 
+a:visited, a:active {
+  color: inherit;
+}
+
+.arrow-down {
+  align-self: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
 body {
   font-family: -apple-system, 'Prompt', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
