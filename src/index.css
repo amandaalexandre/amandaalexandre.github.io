@@ -9,8 +9,12 @@
   --white: #fffff0;
   --brown: #202020;
   --grey: rgb(17, 17, 25, 0.7);
+  --lightgrey: rgb(255, 255, 240, 0.7);
 }
 
+a {
+  text-decoration: none;
+}
 
 body {
   font-family: -apple-system, 'Prompt', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
