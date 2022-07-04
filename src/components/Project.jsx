@@ -15,11 +15,12 @@ export default function Project(props) {
             <a href={props.live}>
                 <img src={`src/assets/thumbs/${props.thumbnail}`} className='card-img' />
             </a>
+            <span className='portfolio-project-name'>{props.name}</span>
             <span className='portfolio-button-line'>
 
                 <a href={props.live}>
                     <button className='portfolio-button'>
-                    {/* <div className='portfolio-button live'> */}
+           
                         <FontAwesomeIcon icon={faDisplay} />
                         Live
                     {/* </div> */}
@@ -34,7 +35,7 @@ export default function Project(props) {
                 </button></a>
             </span>
 
-            <p><b>Stack:</b> {props.stack}</p>
+            <span><b>Stack:</b> {props.stack}</span>
         </div>
     )
 }

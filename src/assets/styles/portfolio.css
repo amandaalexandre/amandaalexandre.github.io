@@ -36,6 +36,11 @@
     box-shadow: 5px 5px var(--brown);
 }
 
+.portfolio-project-name {
+    font-weight: 600;
+    line-height: 2rem;
+}
+
 .portfolio-button-line {
     display: flex;
     justify-content: space-between;
@@ -47,6 +52,7 @@
 }
 
 .portfolio-button {
+    margin: 0 0 15px 0 ;
     display: flex;
     justify-content: space-around;
     align-items: center;
