@@ -13,7 +13,7 @@ export default function Project(props) {
     return (
         <div className='portfolio-card'>
             <a href={props.live}>
-                <img src={`src/assets/thumbs/${props.thumbnail}`} className='card-img' />
+                <img src={`thumbs/${props.thumbnail}`} className='card-img' />
             </a>
             <span className='portfolio-project-name'>{props.name}</span>
             <span className='portfolio-button-line'>
