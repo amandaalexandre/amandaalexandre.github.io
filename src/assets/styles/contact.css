@@ -36,3 +36,9 @@ textarea {
     width: 50%;
     height: 5rem;
 }
+
+@media (max-width: 600px) {
+    input[type=text], [type=email], [type=phone], textarea {
+        width: 100%;
+    } 
+}
