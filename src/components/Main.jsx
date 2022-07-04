@@ -26,8 +26,12 @@ export default function Main() {
                         <button className='link-button'>see what I can do</button>
                     </HashLink>
 
+
                     <Link to='CV_Front_End_Dev_Amanda_Vieira.pdf'>
-                        <button className='link-button'>download my CV</button>
+                        <button className='link-button' onClick={(e) => {
+                            e.preventDefault();
+                            window.open('CV_Front_End_Dev_Amanda_Vieira.pdf', "_blank");
+                            }}>download my CV</button>
                     </Link>
                 </span>
             </div>
