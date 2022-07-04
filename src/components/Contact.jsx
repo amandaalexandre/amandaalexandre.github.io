@@ -17,9 +17,11 @@ export default function Contact() {
 
     emailjs.sendForm('service_c8hnpx5', 'portfolio', form.current, 'R2WL_K0GmVashq23k')
       .then((result) => {
-          console.log(result.text);
+        // Shows confirmation message
+          alert(result.text);
       }, (error) => {
-          console.log(error.text);
+        // Shows error message:
+          alert(error.text);
       });
 
     //   Reset fields of form after it's sent
