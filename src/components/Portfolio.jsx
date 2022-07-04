@@ -24,10 +24,9 @@ export default function Portfolio() {
             {projects}       
         <div className='say-hi'>
             If you liked it,
-            <br/>
-            
+            &nbsp;
             {/* Include link to contact page */}
-            <HashLink smooth to='#contact' >
+            <HashLink smooth to='#contact' id="say-hi-link">
                 say hi.
             </HashLink>
            

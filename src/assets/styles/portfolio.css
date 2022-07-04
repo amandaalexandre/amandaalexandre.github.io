@@ -6,6 +6,11 @@
     padding: 3.5rem;
 }
 
+#say-hi-link {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 /* Stretches the title, arrow and message throught the whole grid */
 .portfolio-container > h1, .say-hi, .portfolio-container > .arrow-down {
     grid-column: 1/4;

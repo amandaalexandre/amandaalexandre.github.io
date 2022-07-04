@@ -29,7 +29,7 @@ const portfolioData = [{
         "live": "https://amandaalexandre.github.io/apod-nasa/",
         "repo": "https://github.com/amandaalexandre/apod-nasa",
         "thumbnail": "apod-nasa.png",
-        "stack": "API requests, Vanilla Javascript, CSS, HTML"
+        "stack": "REST API requests, Vanilla Javascript, CSS, HTML"
         
 },
 {
@@ -47,14 +47,6 @@ const portfolioData = [{
         "repo": "https://github.com/amandaalexandre/chocolatteria",
         "thumbnail": "chocolatteria-ice-cream.png",
         "stack": "HTML, CSS"
-},
-{
-        "id": 7,
-        "name": "Steam Store Market Evaluation",
-        "live": "",
-        "repo": "https://github.com/amandaalexandre/dados-steam",
-        "thumbnail": "steam.png",
-        "stack": "Vanilla JavaScript, HTML, CSS"
 },
 {
         "id": 8,

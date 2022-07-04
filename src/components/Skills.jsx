@@ -28,6 +28,7 @@ export default function Skills() {
                 <li>MongoDB</li>
                 <li>REST APIs</li>
                 <li>CSS</li>
+                <li>jQuery</li>
             </ul>
             </div>
 
