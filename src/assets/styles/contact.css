@@ -32,11 +32,15 @@ form {
 }
 
 input[type=text], [type=email], [type=phone] {
+    border: 2px solid var(--black);
+    box-shadow: 5px 5px var(--brown);
     width: 50%;
     line-height: 2rem;
 }
 
 textarea {
+    border: 2px solid var(--black);
+    box-shadow: 5px 5px var(--brown);
     width: 50%;
     height: 5rem;
 }
