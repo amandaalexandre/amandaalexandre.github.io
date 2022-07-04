@@ -12,6 +12,10 @@
     height: 100%;
 }
 
+#message-ok, #message-error {
+    display: none;
+}
+
 form {
     padding: 1.5rem 3rem;
     width: 100%;

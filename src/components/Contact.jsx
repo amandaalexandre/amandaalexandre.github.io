@@ -17,11 +17,15 @@ export default function Contact() {
 
     emailjs.sendForm('service_c8hnpx5', 'portfolio', form.current, 'R2WL_K0GmVashq23k')
       .then((result) => {
+        document.getElementsByClassName("contact-container").style.display("none");
+        document.getElementById("message-ok").style.display("block");
+        
         // Shows confirmation message
-          alert(result.text);
       }, (error) => {
         // Shows error message:
-          alert(error.text);
+        document.getElementsByClassName("contact-container").style.display("none");
+        document.getElementById("message-error").style.display("block");
+
       });
 
     //   Reset fields of form after it's sent
@@ -34,8 +38,12 @@ export default function Contact() {
             <h1><span className='title-white'>SAY</span> <span className='text-shadow-black'>HI.</span></h1>
             </div>
 
+            {/* Message feedbacks */}
+            <p id="message-ok">Message sent!</p>
+            <p id="message-nok">Try again!</p>
+
             {/* Contact form */}
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} id="contact-form">
                 <label>Name</label>
                 <input type="text" name="user_name" placeholder='Name'/>
                 <label>Email</label>
@@ -49,7 +57,7 @@ export default function Contact() {
                     &nbsp; Send
                 </button>
             </form>
-
+            
         </section>
     )
 }
