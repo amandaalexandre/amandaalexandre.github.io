@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef} from 'react'
 import emailjs from '@emailjs/browser';
 import '../assets/styles/contact.css';
 import '../assets/styles/button.css'
@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact() {
-
+ 
     // EmailJS
     const form = useRef();
 
@@ -17,14 +17,12 @@ export default function Contact() {
 
     emailjs.sendForm('service_c8hnpx5', 'portfolio', form.current, 'R2WL_K0GmVashq23k')
       .then((result) => {
-        document.getElementsByClassName("contact-container").style.display("none");
-        document.getElementById("message-ok").style.display("block");
-        
         // Shows confirmation message
+        alert("Message sent succesfully!")
+
       }, (error) => {
         // Shows error message:
-        document.getElementsByClassName("contact-container").style.display("none");
-        document.getElementById("message-error").style.display("block");
+        alert("I'm sorry. There was some error. Can you try again?")
 
       });
 
@@ -37,10 +35,6 @@ export default function Contact() {
             <div className='black-sidebar'>
             <h1><span className='title-white'>SAY</span> <span className='text-shadow-black'>HI.</span></h1>
             </div>
-
-            {/* Message feedbacks */}
-            <p id="message-ok">Message sent!</p>
-            <p id="message-nok">Try again!</p>
 
             {/* Contact form */}
             <form ref={form} onSubmit={sendEmail} id="contact-form">
