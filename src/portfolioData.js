@@ -49,7 +49,7 @@ const portfolioData = [{
         "stack": "HTML, CSS"
 },
 {
-        "id": 8,
+        "id": 7,
         "name": "Consulting Company Landing Page",
         "live": "https://amandaalexandre.github.io/consulting-html-css-landing-page/",
         "repo": "https://github.com/amandaalexandre/consulting-html-css-landing-page",
