@@ -23,7 +23,7 @@ export default function Main() {
                 {/* Include links to CV and Skills component */}
                 <span>
                     <HashLink smooth to='#skills'>
-                        <button className='link-button'>see what I can do</button>
+                        <button className='link-button' >see what I can do</button>
                     </HashLink>
 
                         <a href="CV_Front_End_Dev_Amanda_Vieira.pdf">
