@@ -37,7 +37,7 @@ export default function Skills() {
             <h3>soft skills</h3>
             <br/>
             <ul>
-                <li>Fluent in English</li>
+                <li>Fluent English</li>
                 <li>Scrum</li>
                 <li>Kanban</li>
             </ul>
