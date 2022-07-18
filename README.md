@@ -48,3 +48,17 @@ yarn run deploy
 - your index.html has a script path that starts with a /.
 
 If you make any changes, repeat the process again.
+
+To avoid blank page, you also need to configure your BrowserRouter:
+
+~~~~
+// Create React App
+<BrowserRouter basename={process.env.PUBLIC_URL}>
+      <App />
+</BrowserRouter>
+
+// Vite
+<BrowserRouter basename={import.meta.env.VITE_PUBLIC_URL}>
+      <App />
+</BrowserRouter>
+~~~~
