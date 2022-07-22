@@ -1,7 +1,7 @@
 const portfolioData = [{
         "id": 1,
         "name": "Bookstore React E-commerce Website",
-        "live": "http://livraria-macabeia-m5.vercel.app/",
+        "live": "https://livraria-macabeia-m5-7dnt4znte-davifernandessrn.vercel.app",
         "repo": "https://github.com/DaviFernandesSRN/Livraria-Macabeia--M5",
         "thumbnail": "bookstore-react-store.png",
         "stack": "React, REST APIs, CSS"
