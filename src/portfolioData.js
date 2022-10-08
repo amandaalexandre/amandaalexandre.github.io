@@ -1,5 +1,24 @@
-const portfolioData = [{
-        "id": 1,
+import { nanoid } from "nanoid";
+
+const portfolioData = [
+{
+        "id": nanoid(),
+        "name": "Carbon Footprint Calculator",
+        "live": "http://my-carbon-footprint.vercel.app/",
+        "repo": "https://github.com/ialej001/MyCarbonFootprint",
+        "thumbnail": "carboncalc.png",
+        "stack": ["React", "Typescript", "Next.js", "Tailwind", "REST APIs", "CSS"]
+},
+{
+        "id": nanoid(),
+        "name": "Covid-19 World Data Dashboard (in progress)",
+        "live": "https://amandaalexandre.github.io/covid-countries/",
+        "repo": "https://github.com/amandaalexandre/covid-countries",
+        "thumbnail": "covid.png",
+        "stack": ["React", "Modern UI", "Axios", "REST APIs", "CSS"]
+},
+{
+        "id": nanoid(),
         "name": "Bookstore React E-commerce Website",
         "live": "https://livraria-macabeia-m5-7dnt4znte-davifernandessrn.vercel.app",
         "repo": "https://github.com/DaviFernandesSRN/Livraria-Macabeia--M5",
@@ -7,7 +26,7 @@ const portfolioData = [{
         "stack": "React, REST APIs, CSS"
 },
 {
-        "id": 2,
+        "id": nanoid(),
         "name": "Netflix Clone with Bootstrap",
         "live": "https://amandaalexandre.github.io/Techflix/",
         "repo": "https://github.com/amandaalexandre/Techflix",
@@ -16,7 +35,7 @@ const portfolioData = [{
         
 },
 {
-        "id": 3,
+        "id": nanoid(),
         "name": "Caesar's Cypher + Base 64 converter",
         "live": "https://amandaalexandre.github.io/codex-romano/",
         "repo": "https://github.com/amandaalexandre/codex-romano",
@@ -24,7 +43,7 @@ const portfolioData = [{
         "stack": "Vanilla JavaScript, HTML, CSS"
 },
 {
-        "id": 4,
+        "id": nanoid(),
         "name": "NASA's Image of The Day",
         "live": "https://amandaalexandre.github.io/apod-nasa/",
         "repo": "https://github.com/amandaalexandre/apod-nasa",
@@ -33,7 +52,7 @@ const portfolioData = [{
         
 },
 {
-        "id": 5,
+        "id": nanoid(),
         "name": "Marketing Company Landing Page",
         "live": "https://amandaalexandre.github.io/marketing-landing-page/",
         "repo": "https://github.com/amandaalexandre/marketing-landing-page",
@@ -41,7 +60,7 @@ const portfolioData = [{
         "stack": "Vanilla JavaScript, HTML, CSS"
 },
 {
-        "id": 6,
+        "id": nanoid(),
         "name": "Chocolatteria Ice Cream Landing Page",
         "live": "https://amandaalexandre.github.io/chocolatteria/",
         "repo": "https://github.com/amandaalexandre/chocolatteria",
@@ -49,7 +68,7 @@ const portfolioData = [{
         "stack": "HTML, CSS"
 },
 {
-        "id": 7,
+        "id": nanoid(),
         "name": "Consulting Company Landing Page",
         "live": "https://amandaalexandre.github.io/consulting-html-css-landing-page/",
         "repo": "https://github.com/amandaalexandre/consulting-html-css-landing-page",
