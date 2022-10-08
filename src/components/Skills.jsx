@@ -22,6 +22,8 @@ export default function Skills() {
             <ul>
                 <li>Javascript</li>
                 <li>React</li>
+                <li>Typescript</li>
+                <li>Next</li>
                 <li>Bootstrap</li>
                 <li>Node.js</li>
                 <li>Express</li>
