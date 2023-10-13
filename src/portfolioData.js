@@ -7,24 +7,25 @@ const portfolioData = [
         "live": "http://my-carbon-footprint.vercel.app/",
         "repo": "https://github.com/ialej001/MyCarbonFootprint",
         "thumbnail": "carboncalc.png",
-        "stack": ["React", "Typescript", "Next.js", "Tailwind", "REST APIs", "CSS"]
+        "stack": "React, Typescript, Next.js, Tailwind, REST APIs, CSS"
 },
 {
+        "id": nanoid(),
+        "name": "Nova Cidade Football Club",
+        "live": "https://https://novacidadeslz.com.br",
+        "repo": "https://github.com/amandaalexandre/cidnova1",
+        "thumbnail": "nova-cidade.png",
+        "stack": "React, JavaScript, Tailwind, HTML, CSS"
+       
+},
+/* {
         "id": nanoid(),
         "name": "Covid-19 World Data Dashboard (in progress)",
         "live": "https://amandaalexandre.github.io/covid-countries/",
         "repo": "https://github.com/amandaalexandre/covid-countries",
         "thumbnail": "covid.png",
-        "stack": ["React", "Modern UI", "Axios", "REST APIs", "CSS"]
-},
-{
-        "id": nanoid(),
-        "name": "Bookstore React E-commerce Website",
-        "live": "https://livraria-macabeia-m5-7dnt4znte-davifernandessrn.vercel.app",
-        "repo": "https://github.com/DaviFernandesSRN/Livraria-Macabeia--M5",
-        "thumbnail": "bookstore-react-store.png",
-        "stack": "React, REST APIs, CSS"
-},
+        "stack": "React, Modern UI, Axios, REST APIs, CSS"
+}, */
 {
         "id": nanoid(),
         "name": "Netflix Clone with Bootstrap",
@@ -66,15 +67,6 @@ const portfolioData = [
         "repo": "https://github.com/amandaalexandre/chocolatteria",
         "thumbnail": "chocolatteria-ice-cream.png",
         "stack": "HTML, CSS"
-},
-{
-        "id": nanoid(),
-        "name": "Consulting Company Landing Page",
-        "live": "https://amandaalexandre.github.io/consulting-html-css-landing-page/",
-        "repo": "https://github.com/amandaalexandre/consulting-html-css-landing-page",
-        "thumbnail": "consulting-landing-page.png",
-        "stack": "Vanilla JavaScript, HTML, CSS"
-       
 },
 ]
 

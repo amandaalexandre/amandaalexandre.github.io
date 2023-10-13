@@ -23,15 +23,12 @@ export default function Skills() {
                 <li>Javascript</li>
                 <li>React</li>
                 <li>Typescript</li>
-                <li>Next</li>
                 <li>Bootstrap</li>
-                <li>Node.js</li>
-                <li>Express</li>
                 <li>SQL</li>
-                <li>MongoDB</li>
                 <li>REST APIs</li>
                 <li>CSS</li>
-                <li>jQuery</li>
+                <li>Tailwind</li>
+                <li>AWS</li>
             </ul>
             </div>
 
