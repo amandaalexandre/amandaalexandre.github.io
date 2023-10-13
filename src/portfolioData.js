@@ -6,13 +6,13 @@ const portfolioData = [
         "name": "Carbon Footprint Calculator",
         "live": "http://my-carbon-footprint.vercel.app/",
         "repo": "https://github.com/ialej001/MyCarbonFootprint",
-        "thumbnail": "carboncalc.png",
+        "thumbnail": "carbon-footprint.png",
         "stack": "React, Typescript, Next.js, Tailwind, REST APIs, CSS"
 },
 {
         "id": nanoid(),
         "name": "Nova Cidade Football Club",
-        "live": "https://https://novacidadeslz.com.br",
+        "live": "https://novacidadeslz.com.br",
         "repo": "https://github.com/amandaalexandre/cidnova1",
         "thumbnail": "nova-cidade.png",
         "stack": "React, JavaScript, Tailwind, HTML, CSS"
